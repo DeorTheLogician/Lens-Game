@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":2,},
     {"id":{"name":"tink08","path":"sounds/tink08/tink08.yy",},"order":0,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":4,},
     {"id":{"name":"bellpitchbend02","path":"sounds/bellpitchbend02/bellpitchbend02.yy",},"order":1,},
@@ -49,6 +50,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
     {"roomId":{"name":"rm_phys_test","path":"rooms/rm_phys_test/rm_phys_test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
