@@ -18,3 +18,6 @@ can_rotate = false;
 
 //fix_ball = physics_fixture_create();
 //physics_fixture_set_circle_shape(fix_ball, sprite_get_width(sprite_index)/2);
+
+rng = 0;
+tink = false;

@@ -70,3 +70,21 @@ if(!control && input_swing_mode && !partner.free) {
 	if((input_right || input_left) && can_rotate)
 		physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner + 90 * torque_dir), lengthdir_y(torque, dir_to_partner + 90 * torque_dir));
 }
+
+
+///Play SFX when on the ground or when colliding with a surface.
+if(free != true && phy_speed >= 0 && audio_is_playing(DRAG33) == false){
+	audio_play_sound(DRAG33,0,0);
+	show_debug_message("playing audio!");
+}
+if(free != true && phy_speed >= 0){
+	audio_sound_gain(DRAG33, .05+phy_speed/(max_speed_ground+1),0);
+	show_debug_message("Changing Volume!");
+}
+if(free == true){
+	audio_stop_sound(DRAG33);
+	show_debug_message("Stopping Audio!");
+}
+
+//tink sfx variable
+if(free == true){ tink = false};
