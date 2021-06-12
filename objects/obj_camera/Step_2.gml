@@ -2,6 +2,8 @@
 // You can write your code in this editor
 #macro VIEW view_camera[0]
 
+window_set_size(view_width * WINDOW_MUL, view_height * WINDOW_MUL);
+
 camera_set_view_size(VIEW, view_width, view_height);
 
 if(instance_exists(obj_phys_ball)) {

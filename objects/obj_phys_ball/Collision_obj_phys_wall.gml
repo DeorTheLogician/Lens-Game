@@ -1,6 +1,5 @@
-/// @description Play a sound if you bonk something.
+/// @description Insert description here
 // You can write your code in this editor
-
 if(free == false && tink == false){
 	rng = round(random_range(0,15))
 	switch(rng){

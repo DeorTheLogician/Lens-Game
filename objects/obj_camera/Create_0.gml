@@ -5,7 +5,7 @@ view_ratio = 2;
 view_width = 1920/view_ratio;
 view_height = 1080/view_ratio;
 
-window_scale = 2;
+window_scale = WINDOW_MUL;
 
 focus_object = noone;
 
