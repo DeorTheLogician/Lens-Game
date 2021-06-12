@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":4,},
     {"id":{"name":"sp_arrow","path":"sprites/sp_arrow/sp_arrow.yy",},"order":4,},
     {"id":{"name":"tl_plat","path":"tilesets/tl_plat/tl_plat.yy",},"order":0,},
     {"id":{"name":"sp_plat","path":"sprites/sp_plat/sp_plat.yy",},"order":1,},
