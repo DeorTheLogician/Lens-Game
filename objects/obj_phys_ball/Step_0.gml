@@ -7,8 +7,11 @@ else
 	free = true;
 
 input_swing_mode = keyboard_check(ord("X")) || keyboard_check(vk_space);
+input_swing_mode_pressed = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_space);
 input_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
+input_right_pressed = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 input_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
+input_left_pressed = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 input_none = !(input_swing_mode || input_right || input_left);
 input_control_switch = keyboard_check_pressed(vk_shift);
 
@@ -42,15 +45,28 @@ if(!control && input_swing_mode && !partner.free) {
 	var dir_to_partner = point_direction(partner.x, partner.y, x, y)
 	
 	//Need to set which mode it's in only on initial direction press to make it feel more consistent.
-	if(dir_to_partner > 185 && dir_to_partner < 355) {
-		if(input_right)
-			physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner + 90), lengthdir_y(torque, dir_to_partner + 90));
-		if(input_left)
-			physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner - 90), lengthdir_y(torque, dir_to_partner - 90));
-	} else {
-		if(input_right)
-			physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner - 90), lengthdir_y(torque, dir_to_partner - 90));
-		if(input_left)
-			physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner + 90), lengthdir_y(torque, dir_to_partner + 90));
+	
+	if(input_swing_mode_pressed)
+		can_rotate = false;
+	
+	if(input_right_pressed) {
+		can_rotate = true;
+		
+		if(dir_to_partner > 210 && dir_to_partner < 330)
+			torque_dir = 1;
+		else
+			torque_dir = -1;
 	}
+	
+	if(input_left_pressed) {
+		can_rotate = true;
+		
+		if(dir_to_partner > 210 && dir_to_partner < 330)
+			torque_dir = -1;
+		else
+			torque_dir = 1;
+	}
+	
+	if((input_right || input_left) && can_rotate)
+		physics_apply_force(x, y, lengthdir_x(torque, dir_to_partner + 90 * torque_dir), lengthdir_y(torque, dir_to_partner + 90 * torque_dir));
 }
