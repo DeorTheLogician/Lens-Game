@@ -1,5 +1,4 @@
 {
-  "name": "tl_plat",
   "spriteId": {
     "name": "sp_plat",
     "path": "sprites/sp_plat/sp_plat.yy",
@@ -41,6 +40,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tl_plat",
   "tags": [],
   "resourceType": "GMTileSet",
 }

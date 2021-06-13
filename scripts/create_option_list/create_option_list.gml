@@ -28,6 +28,7 @@ function create_option_list(){
 			case LIST_TYPE.LEVEL_SELECT:
 				ds_list_add(list, ["Playground", -1, [], play_playground]);
 				ds_list_add(list, ["Level 1", -1, [], play_level_1]);
+				ds_list_add(list, ["Level 2", -1, [], play_level_2]);
 				ds_list_add(list, ["Close", -1, [], -1]);
 				break;
 			case LIST_TYPE.SETTINGS:

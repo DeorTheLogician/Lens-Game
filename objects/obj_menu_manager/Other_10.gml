@@ -17,7 +17,7 @@ if(room == rm_main_menu)
 	create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * -.5, _width, _height, "Play", play_level_1, "UI");
 else
 	create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * -.5, _width, _height, "Retry", room_restart, "UI");
-create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * .5, _width, _height, "Level Select", level_select, "UI");
-create_button(_ch + (_width + _padding) * .5,_cv + (_height + _padding) * -.5, _width, _height, "Options", options, "UI");
-create_button(_ch + (_width + _padding) * .5,_cv + (_height + _padding) * .5, _width, _height, "Controls", controls, "UI");
-create_button(_ch + (_width + _padding) * 0,_cv + (_height + _padding) * 1.5, _width, _height, "Quit", game_end, "UI");
+create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) *  .5, _width, _height, "Level Select", level_select, "UI");
+create_button(_ch + (_width + _padding) *  .5, _cv + (_height + _padding) * -.5, _width, _height, "Options", options, "UI");
+create_button(_ch + (_width + _padding) *  .5, _cv + (_height + _padding) *  .5, _width, _height, "Controls", controls, "UI");
+create_button(_ch + (_width + _padding) *   0, _cv + (_height + _padding) * 1.5, _width, _height, "Quit", game_end, "UI");
