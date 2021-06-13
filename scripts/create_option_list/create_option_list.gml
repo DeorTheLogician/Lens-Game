@@ -34,6 +34,7 @@ function create_option_list(){
 				ds_list_add(list, ["Window Scale", 2, [.5, 1, 1.5, 2, 2.5], -1]);
 				ds_list_add(list, ["Music Volume", 10, [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], -1]);
 				ds_list_add(list, ["SFX Volume", 10, [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], -1]);
+				ds_list_add(list, ["Rotation Style", 0, ["Relative", "Fixed"], -1]);
 				ds_list_add(list, ["Close", -1, [], -1]);
 				break;
 			case LIST_TYPE.CONTROLS:

@@ -43,18 +43,22 @@ if(!control && IN_SWING && !partner.free) {
 	if(IN_RIGHT_PRESSED) {
 		can_rotate = true;
 		
-		if(dir_to_partner > 210 && dir_to_partner < 330)
-			torque_dir = 1;
-		else
+		if(ROT_STYLE == "Relative") {
+				torque_dir = 1;
+			else
+				torque_dir = -1;
+		} else
 			torque_dir = -1;
 	}
 	
 	if(IN_LEFT_PRESSED) {
 		can_rotate = true;
 		
-		if(dir_to_partner > 210 && dir_to_partner < 330)
-			torque_dir = -1;
-		else
+		if(ROT_STYLE == "Relative") {
+				torque_dir = -1;
+			else
+				torque_dir = 1;
+		} else
 			torque_dir = 1;
 	}
 	

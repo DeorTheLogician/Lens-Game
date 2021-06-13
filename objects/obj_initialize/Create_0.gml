@@ -16,10 +16,12 @@ enum OPTION_PROPERTIES {
 }
 
 //Create global variables
-globalvar WINDOW_MUL, MUSIC_VOL_MUL, SFX_VOL_MUL;
+globalvar WINDOW_MUL, MUSIC_VOL_MUL, SFX_VOL_MUL, ROT_STYLE;
 WINDOW_MUL = 1.5;
 MUSIC_VOL_MUL = 1;
 SFX_VOL_MUL = 1;
+ROT_STYLE = "Relative";
+
 
 //Create controller
 if(!instance_exists(obj_con_input))

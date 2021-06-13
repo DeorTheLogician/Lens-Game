@@ -86,6 +86,10 @@ for (var i = 0; i < _size; i++) {
 								audio_group_set_gain(ag_sfx, SFX_VOL_MUL, 0);
 								audio_play_sound(tink03, 0, 0);
 								break;
+							case "Rotation Style":
+								ROT_STYLE = _vals[_sel];
+								audio_play_sound(tink03, 0, 0);
+								break;
 						}
 						break;
 				}
