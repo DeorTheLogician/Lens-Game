@@ -73,16 +73,16 @@ if(y < 0 || y > room_height)
 	room_restart();
 
 ///Play SFX when on the ground or when colliding with a surface.
-if(free != true && phy_speed >= 0 && audio_is_playing(DRAG33) == false){
-	audio_play_sound(DRAG33,0,0);
+if(free != true && phy_speed >= 0 && audio_is_playing(DRAG44) == false){
+	audio_play_sound(DRAG44,0,0);
 //	show_debug_message("playing audio!");
 }
 if(free != true && phy_speed >= 0){
-	audio_sound_gain(DRAG33, .05+phy_speed/(max_speed_ground+1),0);
+	audio_sound_gain(DRAG44, .05+phy_speed/(max_speed_ground+1),0);
 //	show_debug_message("Changing Volume!");
 }
 if(free == true){
-	audio_stop_sound(DRAG33);
+	audio_stop_sound(DRAG44);
 //	show_debug_message("Stopping Audio!");
 }
 
