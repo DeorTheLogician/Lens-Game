@@ -52,3 +52,11 @@ if(!instance_exists(obj_camera))
 //Audio
 audio_group_load(ag_music);
 audio_group_load(ag_sfx);
+
+//Colors
+globalvar C_MENU_BG, C_MENU_BUTTON, C_MENU_TEXT_1, C_MENU_TEXT_2;
+
+C_MENU_BG = $19317F;
+C_MENU_BUTTON = $8E97B2;
+C_MENU_TEXT_1 = c_black;
+C_MENU_TEXT_2 = c_white;

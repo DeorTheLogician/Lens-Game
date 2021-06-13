@@ -4,10 +4,10 @@ instance_deactivate_layer("UI");
 
 width = 400;
 height = 600;
-color = c_ltgrey;
+color = C_MENU_BUTTON;
 
-text_color = c_black;
-hover_text_color = c_white;
+text_color = C_MENU_TEXT_1;
+hover_text_color = C_MENU_TEXT_2;
 
 //GUI
 item_height = 48;

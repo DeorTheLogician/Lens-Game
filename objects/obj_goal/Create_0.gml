@@ -5,7 +5,7 @@ detection_radius = 48;
 goal_time = 60 * 1;
 timer = 0;
 
-ui_color = c_grey;
+ui_color = C_MENU_BG;
 victory = false;
 
 popup_width = 200;

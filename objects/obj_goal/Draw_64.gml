@@ -14,7 +14,7 @@ if(victory) {
 				   _ch + popup_width/2, _cv + popup_height/2, false);
 	
 	draw_set_font(fn_default);
-	draw_set_color(c_black);
+	draw_set_color(C_MENU_TEXT_1);
 	draw_text(_ch, _cv - 37, "Level Complete!");
 	
 	draw_set_halign(fa_left);

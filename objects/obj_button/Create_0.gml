@@ -2,11 +2,11 @@
 // You can write your code in this editor
 width = 280;
 height = 80;
-color = c_ltgrey;
-hover_color = c_white;
+color = C_MENU_BUTTON;
+hover_color = C_MENU_TEXT_2;
 
 text = "Click here";
-text_color = c_black;
+text_color = C_MENU_TEXT_1;
 
 hover = 0;
 
