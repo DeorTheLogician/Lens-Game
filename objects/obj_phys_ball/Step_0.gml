@@ -44,6 +44,7 @@ if(!control && IN_SWING && !partner.free) {
 		can_rotate = true;
 		
 		if(ROT_STYLE == "Relative") {
+			if(dir_to_partner > 225 && dir_to_partner < 315)
 				torque_dir = 1;
 			else
 				torque_dir = -1;
@@ -55,6 +56,7 @@ if(!control && IN_SWING && !partner.free) {
 		can_rotate = true;
 		
 		if(ROT_STYLE == "Relative") {
+			if(dir_to_partner > 225 && dir_to_partner < 315)
 				torque_dir = -1;
 			else
 				torque_dir = 1;
