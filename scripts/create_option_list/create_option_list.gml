@@ -43,6 +43,7 @@ function create_option_list(){
 				ds_list_add(list, ["Right", -1, [], remap_right]);
 				ds_list_add(list, ["Switch Lens", -1, [], remap_switch]);
 				ds_list_add(list, ["Swing Mode", -1, [], remap_swing]);
+				ds_list_add(list, ["Return to Checkpoint", -1, [], remap_restart]);
 				ds_list_add(list, ["Close", -1, [], -1]);
 		}
 	}

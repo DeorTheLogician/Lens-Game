@@ -28,6 +28,10 @@ if(loc_reassign) {
 				loc_IN_SWING = keyboard_lastkey;
 				show_debug_message(loc_key_id + " assigned to " + get_input_name(loc_IN_SWING));
 				break;
+			case "restart":
+				loc_IN_RESTART = keyboard_lastkey;
+				show_debug_message(loc_key_id + " assigned to " + get_input_name(loc_IN_RESTART));
+				break;
 		}
 		
 		audio_play_sound(tink14, 0, 0);
@@ -57,3 +61,4 @@ IN_SWITCH_PRESSED = keyboard_check_pressed(loc_IN_SWITCH);
 IN_SWING = keyboard_check(loc_IN_SWING);
 IN_SWING_PRESSED = keyboard_check_pressed(loc_IN_SWING);
 IN_MENU = keyboard_check_pressed(loc_IN_MENU);
+IN_RESTART = keyboard_check_pressed(loc_IN_RESTART);

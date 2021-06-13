@@ -42,7 +42,7 @@ for(var i = 0; i < _size; i++) {
 		
 		draw_set_halign(fa_right);
 		if(_name != "Close" && inputs[i] != -1) {
-//			show_debug_message(chr(keyboard_lastkey));
+			show_debug_message(string(i) + " " + string(inputs[i]));
 			draw_text(x + width - padding, _y, get_input_name(inputs[i]));
 		}
 		draw_set_halign(fa_left);

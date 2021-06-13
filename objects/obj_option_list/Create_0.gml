@@ -22,5 +22,5 @@ last_hover_id = -1
 hover_sound = tink12;
 
 //Inputs
-inputs = array_create(4);
+inputs = array_create(5);
 controller = instance_nearest(x, y, obj_con_input);

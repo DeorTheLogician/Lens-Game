@@ -69,8 +69,9 @@ if(!control && IN_SWING && !partner.free) {
 }
 
 //Death Condition
-if(y < 0 || y > room_height)
-	room_restart();
+if(y < 0 || y > room_height || IN_RESTART) {
+	return_to_checkpoint();
+}
 
 ///Play SFX when on the ground or when colliding with a surface.
 if(free != true && phy_speed >= 0 && audio_is_playing(DRAG44) == false){

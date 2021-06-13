@@ -11,6 +11,7 @@ with(controller) {
 	other.inputs[1] = loc_IN_RIGHT;
 	other.inputs[2] = loc_IN_SWITCH;
 	other.inputs[3] = loc_IN_SWING;
+	other.inputs[4] = loc_IN_RESTART;
 }
 
 

@@ -16,7 +16,7 @@ var _padding = 40;
 if(room == rm_main_menu)
 	create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * -.5, _width, _height, "Play", play_level_1, "UI");
 else
-	create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * -.5, _width, _height, "Retry", room_restart, "UI");
+	create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) * -.5, _width, _height, "Restart Level", room_restart, "UI");
 create_button(_ch + (_width + _padding) * -.5, _cv + (_height + _padding) *  .5, _width, _height, "Level Select", level_select, "UI");
 create_button(_ch + (_width + _padding) *  .5, _cv + (_height + _padding) * -.5, _width, _height, "Options", options, "UI");
 create_button(_ch + (_width + _padding) *  .5, _cv + (_height + _padding) *  .5, _width, _height, "Controls", controls, "UI");
