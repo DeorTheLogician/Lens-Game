@@ -22,13 +22,16 @@ MUSIC_VOL_MUL = 1;
 SFX_VOL_MUL = 1;
 
 //Create controller
-instance_create_layer(0, 0, "UI_2", obj_con_input);
+if(!instance_exists(obj_con_input))
+	instance_create_layer(0, 0, "UI_2", obj_con_input);
 
 //Create menu
-instance_create_layer(0, 0, "UI", obj_menu_manager);
+if(!instance_exists(obj_menu_manager))
+	instance_create_layer(0, 0, "UI", obj_menu_manager);
 
 //Create camera
-instance_create_layer(0, 0, "UI_2", obj_camera);
+if(!instance_exists(obj_camera))
+	instance_create_layer(0, 0, "UI_2", obj_camera);
 
 //Audio
 audio_group_load(ag_music);

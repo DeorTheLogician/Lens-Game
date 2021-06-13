@@ -9,24 +9,24 @@
 //show_debug_message(loc_reassign);
 
 if(loc_reassign) {
-	show_debug_message("Reassign for " + loc_key_id);
+//	show_debug_message("Reassign for " + loc_key_id);
 	if(keyboard_check_pressed(vk_anykey) && keyboard_lastkey != loc_IN_MENU) {
 		switch(loc_key_id) {
 			case "left":
 				loc_IN_LEFT = keyboard_lastkey;
-				show_debug_message(loc_key_id + "assigned to " + string(loc_IN_LEFT));
+				show_debug_message(loc_key_id + " assigned to " + string(loc_IN_LEFT));
 				break;
 			case "right":
 				loc_IN_RIGHT = keyboard_lastkey;
-				show_debug_message(loc_key_id + "assigned to " + string(loc_IN_RIGHT));
+				show_debug_message(loc_key_id + " assigned to " + string(loc_IN_RIGHT));
 				break;
 			case "switch":
 				loc_IN_SWITCH = keyboard_lastkey;
-				show_debug_message(loc_key_id + "assigned to " + string(loc_IN_SWITCH));
+				show_debug_message(loc_key_id + " assigned to " + string(loc_IN_SWITCH));
 				break;
 			case "swing":
 				loc_IN_SWING = keyboard_lastkey;
-				show_debug_message(loc_key_id + "assigned to " + string(loc_IN_SWING));
+				show_debug_message(loc_key_id + " assigned to " + string(loc_IN_SWING));
 				break;
 		}
 		
@@ -41,6 +41,12 @@ if(loc_reassign) {
 }
 
 //Read inputs to feed to rest of game.
+//show_debug_message("left: " + string(loc_IN_LEFT));
+//show_debug_message("right: " + string(loc_IN_RIGHT));
+//show_debug_message("switch: " + string(loc_IN_SWITCH));
+//show_debug_message("swing: " + string(loc_IN_SWING));
+
+
 IN_RIGHT = keyboard_check(loc_IN_RIGHT);
 IN_RIGHT_PRESSED = keyboard_check_pressed(loc_IN_RIGHT);
 IN_LEFT = keyboard_check(loc_IN_LEFT);

@@ -41,8 +41,10 @@ for(var i = 0; i < _size; i++) {
 	if (type == LIST_TYPE.CONTROLS) {
 		
 		draw_set_halign(fa_right);
-		if(_name != "Close" && inputs[i] != -1)
-			draw_text(x + width - padding, _y, string(inputs[i]));
+		if(_name != "Close" && inputs[i] != -1) {
+			show_debug_message(chr(keyboard_lastkey));
+			draw_text(x + width - padding, _y, get_input_name(inputs[i]));
+		}
 		draw_set_halign(fa_left);
 	}
 	

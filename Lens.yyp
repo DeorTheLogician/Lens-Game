@@ -19,6 +19,7 @@
     {"id":{"name":"DRAG33","path":"sounds/DRAG33/DRAG33.yy",},"order":1,},
     {"id":{"name":"sp_plat","path":"sprites/sp_plat/sp_plat.yy",},"order":1,},
     {"id":{"name":"bellpitchbend02","path":"sounds/bellpitchbend02/bellpitchbend02.yy",},"order":0,},
+    {"id":{"name":"get_input_name","path":"scripts/get_input_name/get_input_name.yy",},"order":4,},
     {"id":{"name":"tink13","path":"sounds/tink13/tink13.yy",},"order":12,},
     {"id":{"name":"tink06","path":"sounds/tink06/tink06.yy",},"order":5,},
     {"id":{"name":"remap_swing","path":"scripts/remap_swing/remap_swing.yy",},"order":3,},
