@@ -7,16 +7,16 @@ function get_input_name(){
 	
 	switch(_input) {
 		case vk_left:
-			_out = "Left";
+			_out = "Left Arrow";
 			break;
 		case vk_right:
-			_out = "Right";
+			_out = "Right Arrow";
 			break;
 		case vk_up:
-			_out = "Up";
+			_out = "Up Arrow";
 			break;
 		case vk_down:
-			_out = "Down";
+			_out = "Down Arrow";
 			break;
 		case vk_enter:
 			_out = "Enter";
@@ -143,6 +143,24 @@ function get_input_name(){
 			break;
 		case ord("¿"):
 			_out = "/";
+			break;
+		case ord("¾"):
+			_out = ".";
+			break;
+		case ord("¼"):
+			_out = ",";
+			break;
+		case ord("Ü"):
+			_out = "Backslash";
+			break;
+		case ord("»"):
+			_out = "=";
+			break;
+		case ord("½"):
+			_out = "-";
+			break;
+		case ord("À"):
+			_out = "`";
 			break;
 		default:
 			_out = chr(_input);
