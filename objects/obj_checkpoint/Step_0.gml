@@ -5,7 +5,7 @@ if(!checkpoint_active) {
 	
 	var _ball = collision_rectangle(x - detection_width/2, y - detection_height, x + detection_width/2, y, obj_phys_ball, true, true);
 	
-	if(instance_exists(_ball) && _ball.control) {
+	if(instance_exists(_ball)) {
 		checkpoint_active = true;
 		audio_play_sound(tink10, 0, 0);
 	}

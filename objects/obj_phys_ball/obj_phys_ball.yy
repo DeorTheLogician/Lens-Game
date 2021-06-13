@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_phys_ball",
-    "path": "sprites/sp_phys_ball/sp_phys_ball.yy",
+    "name": "sp_lens",
+    "path": "sprites/sp_lens/sp_lens.yy",
   },
   "solid": false,
   "visible": true,
