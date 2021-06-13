@@ -18,6 +18,8 @@ list = ds_list_create();
 
 //Variables
 hover_id = -1;
+last_hover_id = -1
+hover_sound = tink12;
 
 //Inputs
 inputs = array_create(4);

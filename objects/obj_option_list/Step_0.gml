@@ -37,12 +37,17 @@ for (var i = 0; i < _size; i++) {
 		//Set hover variable
 		hover_id = i;
 		
+		if(hover_id != last_hover_id)
+			audio_play_sound(hover_sound, 0, 0);
+		
 		//Select
 		if(_sel == -1 && _mouse_press) {
 			switch(_name) {
 				case "Close":
-					if(!controller.loc_reassign)
+					if(!controller.loc_reassign) {
+						audio_play_sound(tink03, 0, 0);
 						instance_destroy();
+					}
 					break;
 				
 				default:
@@ -69,10 +74,12 @@ for (var i = 0; i < _size; i++) {
 						switch(_name) {
 							case "Window Scale":
 								WINDOW_MUL = _vals[_sel];
+								audio_play_sound(tink03, 0, 0);
 								break;
 							case "Music Volume":
 								MUSIC_VOL_MUL = _vals[_sel];
 								audio_group_set_gain(ag_music, MUSIC_VOL_MUL, 0);
+								audio_play_sound(tink03, 0, 0);
 								break;
 							case "SFX Volume":
 								SFX_VOL_MUL = _vals[_sel];
@@ -86,3 +93,5 @@ for (var i = 0; i < _size; i++) {
 		}
 	}
 }
+
+last_hover_id = hover_id;

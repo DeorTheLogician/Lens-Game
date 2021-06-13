@@ -30,6 +30,7 @@ if(loc_reassign) {
 				break;
 		}
 		
+		audio_play_sound(tink14, 0, 0);
 		loc_reassign = false;
 		loc_key_id = noone;
 	}

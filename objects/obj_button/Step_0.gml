@@ -12,6 +12,7 @@ if(hover && !last_hover)
 
 //Click
 if(_click && script >= 0) {
+	audio_play_sound(tink07, 0, 0);
 	script_execute(script);
 }
 

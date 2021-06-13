@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function remap_switch(){
 //	IN_REMAP = true;
+	audio_play_sound(tink07, 0, 0);
 	
 	with(obj_con_input) {
 		loc_IN_SWITCH = -1;
